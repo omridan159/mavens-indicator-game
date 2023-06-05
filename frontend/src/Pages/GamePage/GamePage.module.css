@@ -1,0 +1,95 @@
+.indicator {
+   position: absolute;
+   top: 50%;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   color: white;
+   font-size: 24px;
+}
+
+.left {
+   left: 0;
+}
+
+.right {
+   right: 0;
+}
+
+.gamePage {
+   position: relative;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #f0f0f0;
+   padding: 20px;
+}
+
+.leaderboard {
+   list-style: none;
+   padding: 0;
+   margin-top: 20px;
+   width: 100%;
+   max-width: 600px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   background-color: #fff;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   border-bottom: 1px solid #ddd;
+   font-size: 18px;
+}
+
+.leaderboard li:last-child {
+   border-bottom: none;
+}
+
+.resultMessage {
+   margin-top: 20px;
+   padding: 10px 15px;
+   font-size: 18px;
+   border-radius: 8px;
+   text-align: center;
+   width: 100%;
+   max-width: 600px;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resultMessage.success {
+   background-color: #d4edda;
+   color: #155724;
+   border: 1px solid #c3e6cb;
+}
+
+.resultMessage.error {
+   background-color: #f8d7da;
+   color: #721c24;
+   border: 1px solid #f5c6cb;
+}
+
+.fetchButton {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #4caf50;
+   color: white;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 8px;
+   transition: background-color 0.3s;
+}
+
+.fetchButton:hover {
+   background-color: #45a049;
+}
